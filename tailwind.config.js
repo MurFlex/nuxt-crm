@@ -14,6 +14,13 @@ module.exports = {
 				'2xl': '1400px',
 			},
 		},
+		fontSize: {
+			xs: '0.9rem',
+			sm: '1.07rem',
+			base: '1.18rem',
+			lg: '1.24rem',
+			xl: '1.38rem',
+		},
 		extend: {
 			transitionDuration: {
 				DEFAULT: '333ms',
