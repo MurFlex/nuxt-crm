@@ -5,8 +5,8 @@ import type { HTMLAttributes } from 'vue'
 import { buttonVariants, type ButtonVariants } from '.'
 
 interface Props {
-	as: string
-	asChild: boolean
+	as?: string
+	asChild?: boolean
 	variant?: ButtonVariants['variant']
 	size?: ButtonVariants['size']
 	class?: HTMLAttributes['class']
