@@ -1,0 +1,6 @@
+export const APP_WRITE_ID = process.env.APP_WRITE_ID ?? ''
+export const DB_ID = process.env.DB_ID ?? ''
+export const STORAGE_ID = process.env.STORAGE_ID ?? ''
+export const COLLECTION_DEALS = process.env.COLLECTION_DEALS ?? ''
+export const COLLECTION_CUSTOMERS = process.env.COLLECTION_CUSTOMERS ?? ''
+export const COLLECTION_COMMENTS = process.env.COLLECTION_COMMENTS ?? ''
