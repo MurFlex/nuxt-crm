@@ -36,6 +36,17 @@ Make sure to install the dependencies:
 yarn install
 ```
 
+Next step you need to setup appwrite with tables structure and .env file.
+
+```bash
+APP_WRITE_ID = '<your appwrite id>'
+DB_ID = '<your db id>'
+STORAGE_ID = '<your storage id>'
+COLLECTION_DEALS = '<your deals collection id>'
+COLLECTION_CUSTOMERS = '<your customers collection id>'
+DBCOLLECTION_COMMENTS_ID = '<your comments collection id>'
+```
+
 ## Development Server
 
 Start the development server on `http://localhost:3000`:

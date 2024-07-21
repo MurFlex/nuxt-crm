@@ -20,6 +20,7 @@ module.exports = {
 			base: '1.18rem',
 			lg: '1.24rem',
 			xl: '1.38rem',
+			'2xl': '1.55rem',
 		},
 		extend: {
 			transitionDuration: {
