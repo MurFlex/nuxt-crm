@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { account } from '@/utils/appwrite'
 import { v4 as uuid } from 'uuid'
 import { useAuthStore } from '~/store/auth.store'
 import { useIsLoadingStore } from '~/store/isLoading.store'
@@ -23,6 +24,7 @@ const login = async () => {
 	const response = await account.get()
 
 	if (response) {
+		console.log(response)
 		authStore.set({
 			email: response.email,
 			name: response.name,
