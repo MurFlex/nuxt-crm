@@ -1,9 +1,13 @@
+export interface ILoadingStore {
+	isLoading: boolean
+}
+
 export const useIsLoadingStore = defineStore('isLoading', {
-	state: () => ({
+	state: (): ILoadingStore => ({
 		isLoading: true,
 	}),
 	actions: {
-		set(data: boolean) {
+		set(data: boolean): void {
 			this.$patch({
 				isLoading: data,
 			})

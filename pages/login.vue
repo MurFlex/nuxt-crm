@@ -17,6 +17,10 @@ const isLoadingStore = useIsLoadingStore()
 const authStore = useAuthStore()
 const router = useRouter()
 
+if(authStore.isAuth) {
+  await router.push('/')
+}
+
 const login = async () => {
 	isLoadingStore.set(true)
 	await account.createEmailPasswordSession(emailRef.value, passwordRef.value)
@@ -24,7 +28,6 @@ const login = async () => {
 	const response = await account.get()
 
 	if (response) {
-		console.log(response)
 		authStore.set({
 			email: response.email,
 			name: response.name,

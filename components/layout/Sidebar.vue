@@ -11,7 +11,7 @@ const logout = async () => {
 	isLoadingStore.set(true)
 	await account.deleteSession('current')
 	authStore.clear()
-	router.push('/login')
+	await router.push('/login')
 	isLoadingStore.set(false)
 }
 </script>
